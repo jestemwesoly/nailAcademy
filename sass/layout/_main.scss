@@ -1,0 +1,8 @@
+@use '../colors' as *;
+@use '../fonts' as *;
+
+.main {
+    grid-column: 4/-4;
+    grid-row: 3/-3;
+    display: grid;
+}
