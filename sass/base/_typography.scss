@@ -7,13 +7,21 @@ html {
 }
 
 body {
+	position: relative;
+
 	display: grid;
 	grid-template-columns: repeat(16, 1fr);
 	grid-template-rows: repeat(9, 1fr);
-	gap: .5em;
-	height: 100dvh;
+
+	// max-width: 100dvw;
+	min-height: 100dvh;
+
+	padding: 0.5em;
+	gap: 0.5em;
+
+	background-color: $background;
+
 	font-family: 'Varela Round', sans-serif;
 	font-size: 2rem;
-	background-color: $background;
 	color: $main-font;
 }

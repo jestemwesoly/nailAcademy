@@ -2,7 +2,13 @@
 @use '../fonts' as *;
 
 .main {
-    grid-column: 4/-4;
-    grid-row: 3/-3;
-    display: grid;
+	grid-column: 4/-4;
+	grid-row: 3/-2;
+
+	// max-height: fit-content;
+
+	display: flex;
+	flex-direction: column;
+
+	gap: 0.5em;
 }

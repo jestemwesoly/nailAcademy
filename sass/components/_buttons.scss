@@ -1,0 +1,40 @@
+@use '../colors' as *;
+@use '../fonts' as *;
+
+button {
+	cursor: pointer;
+}
+
+.nav-toggle {
+	position: relative;
+}
+
+.nav-toggle,
+.nav-toggle::after,
+.nav-toggle::before {
+	visibility: visible;
+	z-index: 10;
+
+	width: 2em;
+	height: 0.25em;
+
+	border: none;
+	border-radius: 0.33em;
+
+	background-color: $main-font;
+}
+
+.nav-toggle::after,
+.nav-toggle::before {
+	position: absolute;
+	content: '';
+	left: 0;
+}
+
+.nav-toggle::after {
+	top: 0.66em;
+}
+
+.nav-toggle::before {
+	top: -0.66em;
+}
