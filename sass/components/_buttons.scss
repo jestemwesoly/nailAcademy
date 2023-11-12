@@ -1,40 +1,50 @@
 @use '../colors' as *;
 @use '../fonts' as *;
 
-button {
-	cursor: pointer;
-}
+// BURGER MENU BUTTON
+.nav {
+	&-btn {
+		visibility: visible;
 
-.nav-toggle {
-	position: relative;
-}
+		height: 2.07em;
 
-.nav-toggle,
-.nav-toggle::after,
-.nav-toggle::before {
-	visibility: visible;
-	z-index: 10;
+		border: none;
 
-	width: 2em;
-	height: 0.25em;
+		background-color: $element-bg;
 
-	border: none;
-	border-radius: 0.33em;
-
-	background-color: $main-font;
-}
-
-.nav-toggle::after,
-.nav-toggle::before {
-	position: absolute;
-	content: '';
-	left: 0;
-}
-
-.nav-toggle::after {
-	top: 0.66em;
-}
-
-.nav-toggle::before {
-	top: -0.66em;
+		cursor: pointer;
+	}
+	
+	&-toggle {
+		position: relative;
+	}
+	
+	&-toggle,
+	&-toggle::after,
+	&-toggle::before {
+		z-index: 10;
+	
+		width: 2em;
+		height: 0.25em;
+	
+		border: none;
+		border-radius: 0.33em;
+	
+		background-color: $main-font;
+	}
+	
+	&-toggle::after,
+	&-toggle::before {
+		position: absolute;
+		content: '';
+		left: 0;
+	}
+	
+	&-toggle::after {
+		top: 0.66em;
+	}
+	
+	&-toggle::before {
+		top: -0.66em;
+	}
 }
